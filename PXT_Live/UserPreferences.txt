@@ -1,0 +1,332 @@
+***************************** [SETTINGS NOTES] **************************
+
+# Please DO NOT change any of the spacing in this file. 
+ 
+# Please DO NOT change the name of this file or its file extension.  When done 
+# making your changes to the settings below, just save the file.
+ 
+# After saving this file, you will need to close/restart Live for your changes 
+# to take effect.
+
+
+***************************** [GENERAL SETTINGS] **************************
+
+# This setting determines whether or not the Record button will commence Session
+# recording across all armed Tracks or not.  When FALSE, Session recording
+# will only occur upon the selected Track.
+
+# The possible settings are TRUE or FALSE.
+
+ALLOW_MULTI_TRACK_SESSION_RECORD = TRUE
+
+
+# This setting determines whether or not the functionality of the Arrow Buttons will be reversed
+# so that they move the grid selector by default and navigate when Shift is pressed.
+
+# The possible settings are TRUE or FALSE.
+
+REVERSE_NAV_FUNCTIONS = FALSE
+
+
+# This setting determines the Velocity Curve the Pads should use in PXT-Live.
+
+# The possible settings are LINEAR, LOG 1, LOG 2, LOG 3, LOG 4 or LOG 5.
+
+VELOCITY_CURVE = LOG 1
+
+
+# This setting determines the Pad Threshold the Pads should use in PXT-Live.
+
+# The possible settings are only whole number in the range of -20 to 20.
+
+PAD_THRESHOLD = 0
+
+
+# This setting determines whether or not the Touch Strip will be disabled from 
+# controlling the selected parameter. This setting also affects the 
+# Touch Strip's Crossfader assignment in PXT-Live Plus.
+
+# The possible settings are TRUE or FALSE.
+
+DISABLE_TOUCH_STRIP = FALSE
+
+
+***************************** [CLIP LOOP EDITING] **************************
+
+# This setting determines whether or not a Clip's Start Marker should be moved
+# to the beginning of the Clip's Loop when the Clip's Loop is edited.
+
+# The possible settings are TRUE or FALSE.
+
+MOVE_START_WITH_LOOP = TRUE
+
+
+# This setting determines whether or not to zoom in on the Clip's Loop when the 
+# Clip's Loop is edited.  This setting does NOT apply to Clip Play Poly Sub-Mode.
+
+# The possible settings are TRUE or FALSE.
+
+ZOOM_LOOP_ON_EDIT = TRUE
+
+
+***************************** [FOOTSWITCH SETTINGS] **************************
+
+# The following settings determine the functions that connected footswitches (FS_1 and FS_2)
+# will perform.  
+
+# The possible settings are:
+# - CLIP - Launches the selected Clip.
+# - SCENE - Launches the selected Scene.
+# - SCENE_PLUS - Launches the selected Scene and then selects the Scene beneath it.
+# - PLAY - Performs the same function as the Play Button.
+# - RECORD - Performs the same function as the Record Button.
+# - NEW - Performs the same function as the New Button.
+# - TAP_TEMPO - Performs the same function as the Tap Tempo Button.
+# - UNDO - Performs the same function as the Undo Button.
+# - METRO - Performs the same function as the Metronome Button.
+# - SUSTAIN - Functions as a Sustain Pedal. This setting is ONLY accessible for FS_1.
+
+FS_1_FUNCTION = SCENE
+FS_2_FUNCTION = CLIP
+
+
+***************************** INSERT TRACK SETTINGS] **************************
+
+# This setting determines whether or not Tracks inserted via Session + New
+# will be muted by default.
+
+# The possible settings are TRUE or FALSE.
+
+INSERT_MUTED = FALSE
+
+
+# This setting determines whether or not Tracks inserted via Session + New
+# will be inserted after the selected Track (they'll be inserted at the 
+# end of the Track list otherwise).
+
+# The possible settings are TRUE or FALSE.
+
+INSERT_AFTER_SELECTED = FALSE
+
+
+***************************** [MATRIX MODE SETTINGS] **************************
+
+# This setting determines which Matrix Mode will be selected by default.
+
+# The possible settings are NOTE or CLIP.
+
+DEFAULT_MATRIX_MODE = NOTE
+
+
+# This setting determines whether or not the Encoder Clip Note Event Edit Sub-Mode should 
+# be automatically selected when one the Matrix Note Sequence Sub-Modes is selected.
+
+# The possible settings are TRUE or FALSE.
+
+SELECT_EVENT_EDIT_WITH_SEQ = FALSE
+
+
+# This setting determines whether or not the Octave buttons should scroll by semitones
+# (instead of octaves) by default in the Matrix Note Sequence Sub-Modes.
+
+# The possible settings are TRUE or FALSE.
+
+SCROLL_BY_SEMITONE_BY_DEFAULT = FALSE
+
+
+# This setting determines whether or not Scale Settings info will always be shown in
+# the Display in the Matrix Note Sequence Sub-Modes.  When set to TRUE, Scale Settings
+# info will always be shown and the Display will appear exactly as it does in the 
+# included documentation.  When set to FALSE, Scale Settings info will only be shown
+# when the Scales button is turned on and the name of Track associated with the Clip
+# will be shown otherwise. 
+
+# NOTE: Unlike the Track name display in other areas of PXT-Live, the Display will NOT
+# update upon the name of the Track being changed.  
+
+# The possible settings are TRUE or FALSE.   
+
+ALWAYS_SHOW_SCALE_INFO = TRUE
+
+
+# This setting determines whether or not the orientation of the Matrix should be flipped
+# in Clip Play Mono Sub-Mode.  When set to TRUE, Clip Loop Control will occupy the 
+# top 4 rows of the Matrix and Clip Chopping will occupy the bottom 4 rows of the Matrix.
+
+# The possible settings are TRUE or FALSE. 
+
+FLIP_CLIP_MONO_ORIENTATION = FALSE
+
+
+***************************** [ENCODER MODE SETTINGS] **************************
+
+# This setting determines which Encoder Mode will be selected by default.
+
+# The possible settings are TRACK, DEVICE, LEARN, CLIP, GLOBAL or DRUM RACK.
+
+DEFAULT_ENCODER_MODE = DEVICE
+
+
+# This setting determines whether or not the Device button should toggle
+# the controlled device on/off in Encoder Device Mode.
+
+# The possible settings are TRUE or FALSE.
+
+DEVICE_BUTTON_TOGGLES_DEVICE = TRUE
+
+
+# This setting determines the type of time display that will be shown
+# in the Encoder Global Mode.
+
+# The possible settings are BEATS (shows bars/beats/teenths) or TIME (shows hours/minutes/seconds).
+
+TIME_DISPLAY_TYPE = BEATS
+
+
+# This setting determines whether or not the orientation of the In/Out buttons
+# will be reversed in Encoder Modes (Device and Rename Mode in particular) 
+# where either orientation could make sense.  For example, by default, the
+# In button will move to the left in Device Mode and will backspace in Rename Mode.
+# This setting allows you to reverse that.
+
+# The possible settings are TRUE or FALSE.
+
+REVERSE_IN_OUT_ORIENTATION = FALSE
+
+
+***************************** [RENAME MODE SETTINGS] **************************
+
+# This setting determines whether or not the names that exist in a set you load
+# will be included in the suggestions list. 
+
+# The possible settings are TRUE or FALSE.
+
+INCLUDE_NAMES_FROM_SET_IN_SUGGESTIONS = FALSE
+
+
+# This setting determines whether or not the type of CharacterToInsert will be set
+# based on the character at the position of the cursor.
+
+# The possible settings are TRUE or FALSE.
+
+SET_CHAR_TO_INSERT_TYPE_VIA_CHAR_AT_CURSOR = FALSE
+
+
+# This setting determines the type of CharacterToInsert to use when a new word is being
+# created.  
+
+# The possible settings are UPPER, LOWER, NUMBER or SYMBOL.
+
+CHAR_SET_TO_USE_FOR_NEW_WORDS = UPPER
+
+
+# This setting determines the behavior of Encoder 4.  When FALSE, Encoder 4 will
+# control the cursor just like Encoder 3.  When TRUE, Encoder 4 will perform
+# insertions when moved clockwise and will backspace when moved counter-clockwise. 
+
+# The possible settings are TRUE or FALSE.
+
+ENABLE_ENC_4_EDIT = FALSE
+
+
+***************************** [ACCESSORY MODE SETTINGS] **************************
+
+# The following settings determine the function of the Track Selection and Track State
+# Buttons as well as the Display in Accessory Mode.
+
+# For each Button below, you can specify either:
+# - None, which will cause the Button and associated Display section to have no function.
+
+# - A list of settings composed of the following:
+#	Name, Color, Press Action List, Release Action List
+
+#   Or, if you're using ClyphX Pro, the list should look like this (notice the use of the colon!):
+#   Name, Color, Press Action List : Release Action List
+
+
+#	SETTINGS DESCRIPTIONS:
+#	Name - 	Specifies the text to show in the Display for the Button. This should 
+#		typically be a hint describing the function of the Button.  Only 8 
+#		characters (including space and punctuation) can be displayed per Button.
+#		Also, commas cannot be used.
+
+#	Color - Specifies the LED color the Button should use.  This can be either 
+#		Red, Amber, Yellow or Green.
+
+#	Press Action List - Specifies the ClyphX Action List to perform when the Button
+#				is pressed.
+
+#	Release Action List (optional) - Specifies the ClyphX Action List to perform 
+#					when the Button is released.
+
+
+# 	SETTINGS EXAMPLES:
+#	TRACK_SELECT_1 = Loop 1/2, Green, Clip Loop *0.5 ; Clip Loop Show
+#	TRACK_SELECT_2 = Loop Dbl, Yellow, Clip Loop *2 ; Clip Loop Show
+#	TRACK_SELECT_3 = Reset, Red, All/Vol Reset ; All/Pan Reset , 1/Sel 1
+
+
+TRACK_SELECT_1 = None
+TRACK_SELECT_2 = None
+TRACK_SELECT_3 = None
+TRACK_SELECT_4 = None
+TRACK_SELECT_5 = None
+TRACK_SELECT_6 = None
+TRACK_SELECT_7 = None
+TRACK_SELECT_8 = None
+
+TRACK_STATE_1 = None
+TRACK_STATE_2 = None
+TRACK_STATE_3 = None
+TRACK_STATE_4 = None
+TRACK_STATE_5 = None
+TRACK_STATE_6 = None
+TRACK_STATE_7 = None
+TRACK_STATE_8 = None
+
+
+***************************** [SETTINGS PATH] **************************
+
+# In most cases, this setting should NOT be changed. It is only useful in cases
+# where your settings are not being stored/recalled properly, which would typically 
+# be due to a permissions issue. In those cases, you can specify an alternate 
+# file path to use for storing/recalling your settings.
+
+# For example: C:\Users\Stray\Documents
+
+SETTINGS_PATH = None
+
+
+***************************** [ACCESSORY MODE VARIABLES] **************************
+
+# This section allows you to define a special type of variable that you can use in
+# your ACCESSORY MODE settings above.  The variables you define here are special
+# because their values can be edited via the Encoder Rename Mode.  This allows 
+# for much more flexibility in your Action Lists.
+
+# For example, you could define a variable here like this:
+# BPM = 100
+
+# Then use it in one (or more) of the Accessory Mode Settings above like this:
+# TRACK_STATE_1 = BPM Ramp, Green, BPM Ramp 4 #BPM#
+
+# By default, this variable (BPM) will have the value you specified (100).  You can 
+# change this in Rename Mode by holding down Shift and tapping Encoder 1 or 2 until you 
+# reach the X-Control type.  Now you can change the value of this variable from 100 to 
+# anything you like using Rename Mode.  If you've defined more than one variable
+# you can navigate between the variables by using Encoder 1 or 2 in Rename Mode.  
+
+# You can define as many variables as you like here and use them in any way you like in 
+# your Action Lists.  There are just a few things to be aware of:
+
+# - Variable names have to be a single word (like BPM or ramp_length), should only contain
+#   letters, numbers and underscores and should be less than 17 characters long.   
+
+# - Each variable should be defined on its own line and has to be of the form:
+#   variable_name = variable_value
+
+# - When using a variable in an Action List, the variable needs to be enclosed in hash
+#   tags (like #BPM#). Also, if multiple successive variables are used in an Action
+#   List, they should be separated by space (like #ramp_length# #BPM#). 
+
+# Create your list of variables starting below this line.

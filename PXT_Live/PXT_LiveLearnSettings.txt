@@ -1,0 +1,2 @@
+ENCODERS_A=[(None, None), (None, None), (None, None), (None, None), (None, None), (None, None), (None, None), (None, None)]
+ENCODERS_B=[(None, None), (None, None), (None, None), (None, None), (None, None), (None, None), (None, None), (None, None)]

@@ -1,0 +1,297 @@
+***************************** [SETTINGS NOTES] **************************
+
+# Please DO NOT change any of the spacing in this file. 
+ 
+# Please DO NOT change the name of this file or its file extension.  When done 
+# making your changes to the settings below, just save the file.
+ 
+# After saving this file, you will need to close/restart Live for your changes 
+# to take effect.
+
+
+***************************** [MATRIX MODE SETTINGS] **************************
+
+# This setting determines which of PXT-Live Plus's Matrix Modes will be selected by default.
+
+# The possible settings are DRUM, CAPTURE, CHORD, STC, USER or METERS.
+
+DEFAULT_MATRIX_MODE = DRUM
+
+
+# This setting determines whether or not MIDI Tracks will be automatically armed upon 
+# selection when any of the Plus Matrix Modes (aside from Meters Mode) is active.
+
+# The possible settings are TRUE or FALSE.
+
+ARM_ON_SELECT = FALSE
+
+
+# This settings determines whether or not the Drum Rack mapping in PXT-Live's Capture
+# Sub-Mode should use the LED colors defined below in [DRUM MODE SETTINGS].
+
+# The possible settings are TRUE or FALSE.
+
+CAP_SUB_USE_DR_COLORS = FALSE
+
+
+# This settings determines whether or not the LEDs in Capture Mode will be based
+# on the average pitch of the notes assigned to the Pads.
+
+# The possible settings are TRUE or FALSE.
+
+CAP_LED_BASE_AVG_PITCH = FALSE
+
+
+***************************** [CHORD AND STC MODE SETTINGS] **************************
+
+# This setting determines whether or not the root note of a Chord will be forced to the
+# lowest channel (channel 3) even when the Chord has been inverted.  This setting
+# applies to both Chord and STC Modes.
+
+# The possible settings are TRUE or FALSE.
+
+FORCE_ROOT_TO_LOWEST_CHANNEL = FALSE
+
+
+# This setting determines whether or not Split Mode will be enabled by default.
+# This setting applies to both Chord and STC Modes.
+
+# The possible settings are TRUE or FALSE.
+
+SPLIT_MODE_BY_DEFAULT = FALSE
+
+
+# This setting determines whether or not the Inversion Pads will affect all Chord Pads or just
+# the current Chord Pad by default.  This setting applies to both Chord and STC Modes.
+
+# The possible settings are TRUE or FALSE.
+
+INVERT_ALL_BY_DEFAULT = FALSE
+
+
+# This setting determines whether or not the Chord Type buttons will affect all Chords Pads
+# or just the current Chord Pad by default.  This setting applies only to Chord Mode.
+
+# The possible settings are TRUE or FALSE.
+
+CHORD_TYPE_SELECT_ALL_BY_DEFAULT = TRUE
+
+
+# This setting determines whether or not the 7th option will affect all Chord Pads or just
+# the current Chord Pad by default.  This setting applies only to STC Mode.
+
+# The possible settings are TRUE or FALSE.
+
+SEVENTH_ALL_BY_DEFAULT = TRUE
+
+
+# This setting determines whether or not the Power option will affect all Chord Pads or just
+# the current Chord Pad by default.  This setting applies only to STC Mode.
+
+# The possible settings are TRUE or FALSE.
+
+POWER_ALL_BY_DEFAULT = TRUE
+
+
+***************************** [ACCESSORY MODE SETTINGS] **************************
+
+# This setting determines whether or not the Track Selection and Track State buttons will send
+# keystrokes by default and access ClyphX functionality when Shift is pressed.
+
+# The possible settings are TRUE or FALSE.
+
+SEND_KEYS_BY_DEFAULT = FALSE
+
+
+# The following settings determine the function of the Track Selection and Track State
+# Buttons as well as the Display in Accessory Mode when the Shift button is pressed
+# or when SEND_KEYS_BY_DEFAULT is set to TRUE and the Shift button is not pressed.
+
+# For each Button below, you can specify either:
+# - None, which will cause the Button and associated Display section to have no function.
+
+# - A list of settings composed of the following: Key Name, Color
+
+#   SETTINGS DESCRIPTIONS:
+#   Key Name - Specifies the name of the key from the LIST OF KEYS below that the Button should send.
+
+#   Color - Specifies the LED color the Button should use.  This can be either Red, Amber, Yellow or Green.
+
+
+TRACK_SELECT_1 = Shift, Red
+TRACK_SELECT_2 = Up, Green
+TRACK_SELECT_3 = LoadClip, Red
+TRACK_SELECT_4 = BrwsrFoc, Amber
+TRACK_SELECT_5 = DetFoc, Amber
+TRACK_SELECT_6 = Copy, Yellow
+TRACK_SELECT_7 = Cut, Green
+TRACK_SELECT_8 = Save, Red
+
+TRACK_STATE_1 = Left, Green
+TRACK_STATE_2 = Down, Green
+TRACK_STATE_3 = Right, Green
+TRACK_STATE_4 = BrwsrTgl, Yellow
+TRACK_STATE_5 = DetTgl, Yellow
+TRACK_STATE_6 = Paste, Green
+TRACK_STATE_7 = Dupe, Amber
+TRACK_STATE_8 = Delete, Red
+
+***************************** [LIST OF KEYS] **************************
+
+# The following keys can scroll if the associated button is held down. 
+
+# Up -          Up arrow key.
+# Down -        Down arrow key.
+# Left -        Left arrow key.
+# Right -       Right arrow key.
+# Plus -        Plus key.
+# Minus -       Minus key.
+# PageUp -      Page Up key.
+# PageDown -    Page Down key.
+
+# The following keys/shortcuts/macros are sent upon the associated button being pressed.
+
+# Shift -       Shift modifier key.
+# Ctrl -        Ctrl modifier key.
+# Alt -         Alt modifier key.
+# Cmd/Win -     Cmd (for OS X) or Win (for Windows) modifier key.
+
+# Enter -       Enter key.
+# Escape -      Escape key.
+# Delete -      Delete key.
+# Tab -         Tab key.
+
+# Save -        Save Live Set shortcut.
+# New -         New Live Set shortcut.
+# Open -        Open Live Set shortcut.
+# SlctAll -     Select All shortcut.
+# Copy -        Copy shortcut.
+# Paste -       Paste shortcut.
+# PasteTime -   Paste Time shortcut.
+# Cut -         Cut shortcut.
+# CutTime -     Cut Time shortcut.
+# Dupe -        Duplicate shortcut.
+# DupeTime -    Duplicate Time shortcut.
+# DelTime -     Delete Time shortcut.
+# Split -       Split/Remove Stop Button shortcut.
+# Consolidate - Consolidate shortcut.
+# LoopSel -     Loop Selecton shortcut.
+# InsSilence -  Insert Silence/Scene shortcut.
+# CapIns -      Capture and insert scene shortcut.
+# Follow -      Follow shortcut.
+# Group -       Group shortcut.
+# Ungroup -     Ungroup shortcut.
+# DRTgl -       Drum Rack toggle shortcut.
+# B2A -         Back to Arrangement shortcut.
+# ClipTgl -     Deactivate/Activate Clip(s) shortcut.
+
+# InsAudio -	Insert Audio Track shortcut.
+# InsMidi - 	Insert MIDI Track shortcut.
+# InsRtn -      Insert Return Track shortcut.
+# InsClip - 	Insert MIDI Clip shortcut.
+# Fades -       Create/Show Fades shortcut.
+
+# NGrid -       Smaller Launch Quantization/Narrow Grid shortcut.
+# WGrid -       Larger Launch Quantization/Widen Grid shortcut.
+# TGrid -       Triplet Launch Quantization/Triplet Grid shortcut.
+# SGrid -       Launch Quantization enabled/Snap To Grid shortcut.
+# FGrid -       Fixed Grid shortcut.
+# Qntz16 -      Sixteenth-Note Quantization shortcut.
+# Qntz8 -       Eight-Note Quantization shortcut.
+# Qntz4 -       Quarter-Note Quantization shortcut.
+# QntzBar - 	1-Bar Quantization shortcut.
+# QntzOff - 	Quantization off shortcut.
+
+# FullScrn -    Full Screen shortcut.
+# 2ndWin -      Second Window shortcut.
+# TglPlugs -    Plug-In Windows shortcut.
+# OverTgl - 	Overview toggle shortcut.
+# I/OTgl -      In/Out toggle shortcut.
+# SendTgl - 	Sends toggle shortcut.
+# RtnTgl -      Returns toggle shortcut.
+# MixTgl -      Mixer toggle shortcut.
+
+# FixFoc -      Moves the focus back to the main element in the main focus.
+# LoadClip - 	Loads the selected Clip(s) from the Browser onto to the selected Track and then moves the focus back to the browser.  Does nothing if Browser not visible.
+
+# Hotswap - 	Toggles hotswapping for the selected Device.
+# BrwsrFoc -	Moves the focus to the Browser.  Will also show the Browser if it isn't visible.
+# DetFoc -      Moves the focus to the Detail View.  Will also show Detail View if it isn't visible.
+# MainFoc -     Moves the focus to the main focus.
+# BrwsrTgl - 	Shows/hides the Browser and also moves the focus to/from the Browser.
+# DetTgl -      Toggles between Clip and Device View.
+
+# The following keys have no function in Live.  They are intended to be used for accessing menu items in Live.
+# On OS X, you can assign these keys to menu items by going to Keyboard Shortcuts in System Preferences - Keyboard & Mouse.
+# On Windows, you can assign these keys to menu items with our Live Menu Keys utility available here:
+# http://beatwise.proboards.com/thread/1131
+
+# User1 - 	Sends F13 (on Windows) or Ctrl+Cmd+F1 (on OS X).
+# User2 - 	Sends F14 (on Windows) or Ctrl+Cmd+F2 (on OS X).
+# User3 - 	Sends F15 (on Windows) or Ctrl+Cmd+F3 (on OS X).
+# User4 - 	Sends F16 (on Windows) or Ctrl+Cmd+F4 (on OS X).
+# User5 - 	Sends F17 (on Windows) or Ctrl+Cmd+F5 (on OS X).
+# User6 - 	Sends F18 (on Windows) or Ctrl+Cmd+F6 (on OS X).
+# User7 - 	Sends F19 (on Windows) or Ctrl+Cmd+F7 (on OS X).
+# User8 - 	Sends F20 (on Windows) or Ctrl+Cmd+F8 (on OS X).
+# User9 - 	Sends F21 (on Windows) or Ctrl+Cmd+F9 (on OS X).
+# User10 - 	Sends F22 (on Windows) or Ctrl+Cmd+F10 (on OS X).
+# User11 - 	Sends F23 (on Windows) or Ctrl+Cmd+F11 (on OS X).
+# User12 - 	Sends F24 (on Windows) or Ctrl+Cmd+F12 (on OS X).
+
+
+***************************** [DRUM MODE SETTINGS] **************************
+
+# The following settings determine the LED colors to use for Pads in Drum Mode.
+
+# For all of these settings, the names of the usable LED colors are:
+
+    # OFF 
+    # WHITE_DIM, WHITE_HALF, WHITE_FULL
+    # RED_DIM, RED_HALF, RED_FULL
+    # AMBER_DIM, AMBER_HALF, AMBER_FULL
+    # YELLOW_DIM, YELLOW_HALF, YELLOW_FULL
+    # GREEN_DIM, GREEN_HALF
+    # BLUE_DIM, BLUE_HALF, BLUE_FULL
+    # PURPLE_DIM, PURPLE_HALF, PURPLE_FULL
+
+
+# This setting determines the LED color to use for Pads controlling Drum Rack pads that aren't empty.
+PAD_NOT_EMPTY = YELLOW_FULL
+
+# This setting determines the LED color to use for Pads controlling Drum Rack pads that are empty.
+PAD_EMPTY = YELLOW_HALF
+
+# This setting determines the LED color to use for Pads controlling Drum Rack pads that are muted.
+PAD_MUTED = AMBER_HALF
+
+# This setting determines the LED color to use for Pads controlling Drum Rack pads that are soloed.
+PAD_SOLOED = BLUE_HALF
+
+# This setting determines the LED color to use for Pads controlling Drum Rack pads that are selected.
+PAD_SELECTED = BLUE_FULL
+
+# This setting determines the LED color to use for Pads controlling Drum Rack pads that are empty and selected.
+PAD_EMPTY_SELECTED = BLUE_DIM
+
+# This setting determines the LED color to use for Pads controlling Impulse pads.
+PAD_IMPULSE = PURPLE_FULL
+
+
+# Below you can define associations between LED colors and Drum Rack pad names (or portions of pad names).
+
+# For example, you could associate RED_FULL with any Drum Rack pad that contains the word Kick in its name.
+# That would look like this:
+# PAD_COLOR_TO_NAME = RED_FULL, Kick
+
+# You can associate a single LED color with multiple names/variations of names as well.
+# For example, you may want to associate PURPLE_FULL with snares, but snares in various
+# kits may not use the word Snare in their name, they might use Snr instead.  You can
+# accommodate that like so:
+# PAD_COLOR_TO_NAME = PURPLE_FULL, Snare, Snr  
+
+# Note that the pad names you specify here are NOT cases-sensitive.  Also, the associations 
+# you create here will override the PAD_NOT_EMPTY setting above.
+
+# Create your associations below.  Put each association on its own line.  Each line should start
+# with PAD_COLOR_TO_NAME and use the format shown in the examples above. 
